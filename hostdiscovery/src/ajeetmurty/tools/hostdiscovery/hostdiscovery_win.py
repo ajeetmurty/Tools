@@ -25,7 +25,6 @@ def print_sys_info():
     logr.info('login|hostname|os|python : {0}|{1}|{2}|{3}.'.format(os.getlogin(), platform.node() , platform.system() + '-' + platform.release() , platform.python_version()))
 
 def do_discovery():
-    # temp_host_ip = '10.1.8.89'
     for i in range (1, 255):
         temp_ip = ping_subnet + str(i)
         do_ping(temp_ip)
